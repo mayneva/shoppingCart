@@ -15,7 +15,8 @@ export class CartService {
     { id: 0, name: 'A New Day', price: 28.99, amount: 0 },
     { id: 1, name: 'The flower of love', price: 25.49, amount: 2 },
     { id: 2, name: 'Passion', price: 40.99, amount: 0 },
-    { id: 3, name: 'Pretty in pink', price: 36.99, amount: 4 }
+    { id: 3, name: 'Spring blooms', price: 36.99, amount: 4 },
+    { id: 4, name: 'Touches of Light', price: 16.99, amount: 1 }
   ];
 
   private cart = [];
