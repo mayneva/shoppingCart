@@ -12,7 +12,7 @@ export interface Product {
 })
 export class CartService {
   data: Product[] = [
-    { id: 0, name: 'A New Day', price: 28.99, image: https://fakestoreapi.com/img/71pWzhdJNwL._AC_UL640_QL65_ML3_.jpg, amount: 0 },
+    { id: 0, name: 'A New Day', price: 28.99, amount: 0 },
     { id: 1, name: 'The flower of love', price: 25.49, amount: 2 },
     { id: 2, name: 'Passion', price: 40.99, amount: 0 },
     { id: 3, name: 'Spring blooms', price: 36.99, amount: 4 },
