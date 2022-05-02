@@ -12,10 +12,10 @@ export interface Product {
 })
 export class CartService {
   data: Product[] = [
-    { id: 0, name: 'Pizza Salami', price: 8.99, amount: 0 },
-    { id: 1, name: 'Pizza Classic', price: 5.49, amount: 0 },
-    { id: 2, name: 'Sliced Bread', price: 4.99, amount: 0 },
-    { id: 3, name: 'Salad', price: 6.99, amount: 0 }
+    { id: 0, name: 'A New Day', price: 28.99, amount: 0 },
+    { id: 1, name: 'The flower of love', price: 25.49, amount: 2 },
+    { id: 2, name: 'Passion', price: 40.99, amount: 0 },
+    { id: 3, name: 'Pretty in pink', price: 36.99, amount: 4 }
   ];
 
   private cart = [];
