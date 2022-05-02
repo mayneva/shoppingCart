@@ -1,3 +1,7 @@
+ion-menu ion-content {
+  --background: var(--ion-item-background, var(--ion-background-color, #fff));
+}
+
 ion-fab-button {
   height: 70px;
   width: 70px;
@@ -8,7 +12,7 @@ ion-fab-button {
 }
 
 .cart-length {
-  color: var(--ion-color-primary);
+  color: #fcbacd;
   position: absolute;
   top: 18px;
   left: 25px;
@@ -16,4 +20,12 @@ ion-fab-button {
   font-size: 1em;
   min-width: 25px;
   z-index: 10;
+}
+
+ion-list {
+  height: 100%;
+  background-image: url('http://www.mirunaandriesei.ro/floral-app/menu.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
