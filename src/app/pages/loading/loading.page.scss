@@ -1,0 +1,16 @@
+.loader {
+  height: 100%;
+  background-color: var(--dirtyWhite);
+  background-image: url("../../../assets/images/loader.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  display: flex;
+}
+
+ion-spinner {
+  color: var(--pink);
+}

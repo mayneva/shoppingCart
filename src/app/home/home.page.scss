@@ -22,10 +22,90 @@ ion-fab-button {
   z-index: 10;
 }
 
-ion-list {
-  height: 100%;
-  background-image: url('http://www.mirunaandriesei.ro/floral-app/menu.png');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+.slide {
+  background-color: #fff;
+  margin: 20px 0;
+  border-radius: 8px;
+  width: calc(100% - 40px);
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+.swiper-slide img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  margin: 0 calc(50% - 150px);
+  border-radius: 8px;
+}
+
+p {
+  color: var(--brown);
+  text-align: left;
+  font-weight: 600;
+  font-size: 22px;
+}
+
+.productText {
+  width: 70%;
+  float: left;
+
+}
+.productAdd{
+  width: 20%;
+  float: left;
+}
+.productAdd button {
+  background-color: var(--pink);
+  color: #fff;
+  padding: 8px 12px;
+  font-weight: 800;
+  font-size: 20px;
+  float: right;
+  margin-top: 30px;
+  border-radius: 4px;
+}
+
+.productAdd p {
+  color: var(--gray);
+}
+
+.categoriesBtn {
+  width: 100%;
+  display: flex;
+}
+
+.productText p {
+  margin: 0;
+}
+
+ion-fab-button{
+  height:70px;
+  width:70px;
+}
+
+.cart-icon{
+  font-size:50px;
+}
+.cart-lenght{
+  position:absolute;
+  background-color:#fff;
+  right:10px;
+  bottom:10px;
+  width:20px;
+  height:20px;
+  border-radius:50%;
+  color:var(--pink)
+
+}
+
+ion-card{
+  box-shadow: 0 0px 1px -2px rgba(0, 0, 0, 0.0), 0 2px 2px 0 rgba(0, 0, 0, 0.0), 0 1px 5px 0 rgba(0, 0, 0, 0.0);
+}
+ion-card h1{
+  font-size:22px
+}
+
+ion-card-content{
+  color: var(--brown)
 }

@@ -1,0 +1,24 @@
+.categoriesSection {
+  flex: 1;
+  margin: 10px;
+}
+
+.categoriesSection button {
+  background-color: #fff;
+  width: 100%;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  height: 75px;
+}
+
+.categoriesSection button img {
+  width: 48px;
+}
+
+.categoriesSection span {
+  color: var(--brown);
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+  font-weight: 500;
+}

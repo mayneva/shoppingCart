@@ -1,0 +1,44 @@
+.contact-section{
+  width: 100%;
+  display:flex;
+  padding:20px;
+
+  .contact-section__icon{
+      display:flex;
+      flex-direction:column;
+      padding-right:40px;
+
+      .contact-section__iconButton{
+          width: 60px;
+          height: 60px;
+          border-radius: 8px;
+          background-color: #fff;
+          padding:10px;
+
+          img{
+              width:100%
+          }
+      }
+
+      span{
+          font-size:10px;
+          color:var(--brown);
+          width:100%;
+          text-align:center;
+          margin-top: 10px;
+      }
+  }
+
+  .contact-section__text{
+      display:flex;
+      align-items:center;
+      flex:1;
+      padding-right:80px;
+
+      p{
+          color:var(--brown);
+          font-size:16px;
+          margin-top:0
+      }
+  }
+}

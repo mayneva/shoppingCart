@@ -1,0 +1,23 @@
+.login {
+  height: 100%;
+  background-color: var(--dirtyWhite);
+  background-image: url("../../../assets/images/login.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 30px;
+}
+
+h1 {
+  margin-left: 20px;
+}
+ion-input {
+  --background: #fff;
+  border-radius: 8px;
+  --color: var(--brown);
+}
+
+
+ion-list{
+  background:transparent
+}

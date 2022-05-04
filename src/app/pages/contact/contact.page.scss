@@ -1,0 +1,20 @@
+.socialMedia{
+    width:100%;
+    padding:20px;
+
+    h2{
+        color:var(--brown);
+        font-size: 22px
+    }
+    .socialMedia__container{
+        width: 100%;
+        background-color:#fff;
+        border-radius: 8px;
+        padding: 10px;
+        display: flex;
+        justify-content:space-around;
+
+
+
+    }
+}

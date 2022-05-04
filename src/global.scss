@@ -1,84 +1,30 @@
 @import '~animate.css/animate.min.css';
 
-.cart-modal {
-    --height: 50%;
-    --border-radius: 10px;
-    padding: 25px;
-}
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
 
-h1 {
-    color: var(--brown);
-    font-size: 40px;
-    font-weight: 400;
-    width: 100%;
-}
+/* Core CSS required for Ionic components to work properly */
+@import "~@ionic/angular/css/core.css";
 
-ion-toolbar h1,
-ion-toolbar p {
-    padding-left: 20px;
-    color: var(--brown);
-}
-
-ion-item {
-    --background: transparent;
-    margin: 20px 0;
-}
-
-ion-list {
-    --background: transparent;
-}
-
-ion-label {
-    --color: var(--brown);
-}
-
-ion-input {
-    --background: #fff;
-    border-radius: 8px;
-    --color: var(--brown);
-    --padding: 20px;
-}
-
-.list-ios {
-    background: transparent;
-}
-
-.form ion-button {
-    margin: 20px 5px 0 20px;
-}
-
-.toolbar-container {
-    background-color: transparent;
-}
-
-ion-text p {
-    padding: 10px 20px;
-}
-
-.header-bg {
-    height: 100px;
-    background-image: url("http://www.mirunaandriesei.ro/floral-app/header.png");
-    background-position: right;
-    background-repeat: no-repeat;
-    width: 80%;
-    margin-left: 20%;
-    position: absolute;
-    z-index: 10000;
-}
-
-h2 {
-    color: var(--gray);
-    font-size: 14px;
-    font-weight: 600;
-    width: 100%;
-    text-align: left;
-}
+/* Basic CSS for apps built with Ionic */
+@import "~@ionic/angular/css/normalize.css";
+@import "~@ionic/angular/css/structure.css";
+// @import "~@ionic/angular/css/typography.css";
+@import '~@ionic/angular/css/display.css';
+@import 'theme/general.scss';
+// /* Optional CSS utils that can be commented out */
+@import "~@ionic/angular/css/padding.css";
+@import "~@ionic/angular/css/float-elements.css";
+@import "~@ionic/angular/css/text-alignment.css";
+@import "~@ionic/angular/css/text-transformation.css";
+@import "~@ionic/angular/css/flex-utils.css";
 
 
-a {
-    text-decoration: none
-}
-
-ion-label {
-    margin-bottom: 10px !important;
-}

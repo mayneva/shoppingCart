@@ -1,38 +1,79 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-buttons slot="start">
-      <ion-menu-button></ion-menu-button>
-    </ion-buttons>
-    <h1>Your cart</h1>
-  </ion-toolbar>
-</ion-header>
+<ion-toolbar color="tertiary">
+  <ion-buttons slot="start">
+    <ion-menu-button color="primary"></ion-menu-button>
+  </ion-buttons>
+  <h1>Kukka Pibea</h1>
+</ion-toolbar>
 
-<ion-content>
-  <ion-fab vertical="top" horizontal="end" slot="fixed">
-    <ion-fab-button (click)="openCart()" #cart>
-      <div class="cart-length">{{ cartItemCount | async }}</div>
-      <ion-icon name="cart" class="cart-icon"></ion-icon>
-    </ion-fab-button>
-  </ion-fab>
-  <ion-list>
-    <ion-card *ngFor="let p of products">
-      <ion-card-header>
-        <ion-card-title>{{ p.name }}</ion-card-title>
-      </ion-card-header>
-      <ion-card-content>
-        <ion-row class="ion-align-items-center">
-          <ion-col size="8">
-            <ion-label color="secondary">
-              <b>{{ p.price | currency:'EUR' }}</b>
-            </ion-label>
-          </ion-col>
-          <ion-col size="4" class="ion-text-right">
-            <ion-button fill="clear" (click)="addToCart(p)">
-              <ion-icon name="add"></ion-icon>
-            </ion-button>
-          </ion-col>
-        </ion-row>
-      </ion-card-content>
-    </ion-card>
-  </ion-list>
+<ion-content fullscreen color="tertiary" class="ion-padding" scroll-y="false">
+
+  <div class="categoriesBtn" color="primary">
+
+    <a routerLink="/flowers">
+      <app-category-button
+      spanText="Flowers"
+      image="flower2.png">
+      </app-category-button>
+    </a>
+
+    <a routerLink="/products">
+    <app-category-button
+      spanText="Cards"
+      image="cards.png"
+    ></app-category-button>
+    </a>
+
+    <a routerLink="/products">
+    <app-category-button
+      spanText="Cards"
+      image="candles.png"
+    ></app-category-button>
+    </a>
+
+    <a routerLink="/products">
+    <app-category-button
+      spanText="Funeral"
+      image="death-and-funeral.png"
+    ></app-category-button>
+    </a>
+  </div>
+
+
+
+
+    <ion-slides>
+      <ion-slide *ngFor="let p of products">
+        <div class="slide">
+          <img src="../../assets/products/{{p.picture}}" />
+          <div class="productText">
+            <h2>{{ p.name }}</h2>
+            <p>{{ p.price | currency: 'EUR' }}</p>
+          </div>
+          <div class="productAdd">
+            <button ion-button (click)="addToCart(p)">+</button>
+          </div>
+        </div>
+      </ion-slide>
+    </ion-slides>
+
+    <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+      <ion-fab-button (click)="openCart()" #cart>
+        <div class="cart-length">{{ cartItemCount | async }}</div>
+        <ion-icon name="cart" class="cart-icon"></ion-icon>
+      </ion-fab-button>
+    </ion-fab>
+
+    <a routerLink="/about-us">
+      <ion-card color="transparent">
+        <ion-card-header>
+          <h1>About us</h1>
+        </ion-card-header>
+        <ion-card-content color="secondary">
+          We operate in Pihtiputaa in the same premises as Mononen's funeral service.
+          Our job description includes binding work
+          the sale of ...
+        </ion-card-content>
+      </ion-card>
+    </a>
+
 </ion-content>

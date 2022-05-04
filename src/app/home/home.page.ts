@@ -14,10 +14,12 @@ export class HomePage {
   products = [];
   cartItemCount: BehaviorSubject<number>;
 
+  // eslint-disable-next-line @typescript-eslint/member-ordering
   @ViewChild('cart', { static: false, read: ElementRef }) fab: ElementRef;
 
   constructor(private cartService: CartService, private modalCtrl: ModalController) { }
 
+  // eslint-disable-next-line @angular-eslint/use-lifecycle-interface
   ngOnInit() {
     this.products = this.cartService.getProducts();
     this.cart = this.cartService.getCart();
@@ -32,12 +34,12 @@ export class HomePage {
   async openCart() {
     this.animateCSS('bounceOutLeft', true);
 
-    let modal = await this.modalCtrl.create({
+    const modal = await this.modalCtrl.create({
       component: CartModalPage,
       cssClass: 'cart-modal'
     });
     modal.onWillDismiss().then(() => {
-      this.fab.nativeElement.classList.remove('animated', 'bounceOutLeft')
+      this.fab.nativeElement.classList.remove('animated', 'bounceOutLeft');
       this.animateCSS('bounceInLeft');
     });
     modal.present();
@@ -45,15 +47,16 @@ export class HomePage {
 
   animateCSS(animationName, keepAnimated = false) {
     const node = this.fab.nativeElement;
-    node.classList.add('animated', animationName)
+    node.classList.add('animated', animationName);
 
     //https://github.com/daneden/animate.css
-    function handleAnimationEnd() {
+    const handleAnimationEnd = () => {
       if (!keepAnimated) {
         node.classList.remove('animated', animationName);
       }
-      node.removeEventListener('animationend', handleAnimationEnd)
-    }
-    node.addEventListener('animationend', handleAnimationEnd)
+      node.removeEventListener('animationend', handleAnimationEnd);
+    };
+
+    node.addEventListener('animationend', handleAnimationEnd);
   }
 }
