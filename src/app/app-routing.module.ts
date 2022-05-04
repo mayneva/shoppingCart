@@ -56,6 +56,18 @@ const routes: Routes = [
     path: 'your-profile',
     loadChildren: () => import('./pages/your-profile/your-profile.module').then( m => m.YourProfilePageModule)
   },
+  {
+    path: 'cards',
+    loadChildren: () => import('./pages/cards/cards.module').then( m => m.CardsPageModule)
+  },
+  {
+    path: 'funeral',
+    loadChildren: () => import('./pages/funeral/funeral.module').then( m => m.FuneralPageModule)
+  },
+  {
+    path: 'candles',
+    loadChildren: () => import('./pages/candles/candles.module').then( m => m.CandlesPageModule)
+  },
 ];
 
 @NgModule({
